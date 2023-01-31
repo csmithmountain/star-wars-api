@@ -1,6 +1,6 @@
 import React from "react";
 
-import Buttons from ".components/buttons";
+// import Buttons from ".components/buttons";
 
 export default class People extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ export default class People extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://swapi.dev/api/people%22")
+    fetch("https://swapi.dev/api/people")
       .then((res) => res.json())
       .then((json) => {
         this.setState({
